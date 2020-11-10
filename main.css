@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    color: gray;
+}
+.container {
+    width: 60%;
+    margin: 0px auto;
+    padding: 20px 0;
+}
+.title {
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.text {
+}
+.text .main-img {
+    width: 300px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.text a:hover {
+    color: blue;
+    text-decoration: none;
+}
+/*mobile*/
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    .text .main-img {
+        float: unset;
+        display: block;
+        margin: 0 auto;
+    }
+}
